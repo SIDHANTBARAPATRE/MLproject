@@ -1,3 +1,4 @@
+## dont run this file....run ingestion.py file
 ## here we will handle missing values(using imputer) and do transformation(suing standard scaler)
 ## and saving it into preprocessor.pkl so that we can later feed it to the model.
 import os
@@ -102,7 +103,7 @@ class DataTransformation:
             numerical_columns = ["writing_score", "reading_score"]
 
 
-            ## getimg X_train and y_train
+            ## getting X_train and y_train
             input_feature_train_df=train_df.drop(columns=[target_column_name],axis=1)
             target_feature_train_df=train_df[target_column_name]
 
